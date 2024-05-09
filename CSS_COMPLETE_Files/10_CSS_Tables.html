@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS TABLES</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+            background-color: gray;
+        }
+    #table {
+        margin: 100px auto;
+        border-radius: 20px;
+        width: 1000px;
+        height: 400px;
+        color: white;
+        text-align: center;
+        box-shadow: 0 0 20px black;
+        background-image: url(img/image1.jpg);
+        background-size: cover;
+
+    }
+     th {
+        
+        border-radius: 20px;
+        background-color: darkred;
+
+     }
+     td{
+          
+        border-radius: 70px;
+     }
+     tr:nth-child(even){
+        background-color: lightsalmon;
+     }
+     tr:nth-child(odd){
+        background-color: green;
+     }
+     td:hover{
+        background-image: url(img/image1.jpg);
+        background-size: cover;
+     }
+ 
+    </style>
+</head>
+<body>
+
+    <!-- CUSTOM TABLE -->
+    <table id="table">
+        <tr>
+            <th>Emp Name</th>
+            <th>Designation</th>
+            <th>Company</th>
+        </tr>
+        <tr>
+            <td>John Mayor</td>
+            <td>Software Engineer</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td>Alex Ben</td>
+            <td>Software Engineer</td>
+            <td>Google</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Software Engineer</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td>Alex Ben</td>
+            <td>Software Engineer</td>
+            <td>Google</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Software Engineer</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td>Alex Ben</td>
+            <td>Software Engineer</td>
+            <td>Google</td>
+        </tr>
+    </table>
+</body>
+</html>

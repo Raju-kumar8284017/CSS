@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Backgrounds</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+             background: white url("img/image2.jpg") no-repeat fixed center;
+
+        }
+        h1{
+            background-color: lightsalmon;
+            
+        }
+        #bg-color{
+            background-color: thistle;
+        }
+         #bg-img{
+            box-shadow: 0 0 10px black;
+            width: 600px;
+            background-image: url("img/nature.jpg");
+         }
+        #image{
+            width: 100%;
+            height: 200px;
+            box-shadow: 0 0 10px salmon;
+            background-image: url('img/nature.jpg');
+            background-repeat: no-repeat;
+        }
+         #image-x{
+            width: 100%;
+            height: 200px;
+            box-shadow: 0 0 10px salmon;
+             background-image: url('img/nature.jpg');
+            background-repeat: repeat-x;
+        }
+         #image-y{
+            width: 100%;
+            height: 200px;
+            box-shadow: 0 0 10px salmon;
+             background-image: url('img/nature.jpg');
+            background-repeat: repeat-y;
+
+        }
+        #bg-position{
+             width: 100%;
+            height: 200px;
+            box-shadow: 0 0 10px salmon;
+             background-image: url('img/nature.jpg');
+             background-repeat:no-repeat;
+             background-position: inherit;
+
+        }
+        #bg-attachment{
+              width: 100%;
+            height: 200px;
+            box-shadow: 0 0 10px salmon;
+            background-image: url('img/image2.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+
+             
+        }
+         #Linear-Gradient{
+            width: 500px;
+            height: 500px;
+            box-shadow: 0 0 12px solid black;
+            background-image: url("img/image3.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+             
+        }
+    </style>
+</head>
+<body>
+
+   
+                                <!--     Background Color  
+        -------------------------------------------------------------------------------
+    -->
+            <h1>Background color</h1>
+            <div id="bg-color">
+                <h2>I am with some color background</h2>
+            </div>
+
+     <!--  ----------------------------- Image ----------------------------------- -->
+                <h1>image</h1>
+                <div id="bg-img">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+
+     
+      <!--  ------------------------------- Repeat  --------------------------------------->
+            <h1>background repeat</h1>
+            <div id="image">
+                
+            </div>
+            <!---- background-repeat-repeat-x------------------------------------------------>
+                   <h1>background repeat</h1>
+            <div id="image-x">
+                
+            </div>
+
+             <!---- background-repeat--repeat-y------------------------------------------------>
+                   <h1>background repeat</h1>    
+            <div id="image-y">
+                
+            </div>
+
+       <!--  ----------------------------------  Position ---------------------------- -->
+
+           <h1>background position</h1>         <!---top,--- bottom,--left,--right,-->
+            <div id="bg-position">                <!------center, initial, inharitaj---->
+                
+            </div>
+
+       <!-- ---------------------------  Attachment -------------------------------- -->
+                <h1>bg-attachment</h1>
+            <div id="bg-attachment">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+    
+       <!------------------------size--  Linear-Gradient ------------------------------- -->
+                <h1>Linear-Gradient  </h1>    
+            <div id="Linear-Gradient">
+                
+            </div>
+
+
+
+</body>
+</html>

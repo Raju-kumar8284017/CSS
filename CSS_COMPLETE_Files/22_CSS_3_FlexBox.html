@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 3 Flex Box</title>
+    <style type="text/css">
+        .main{
+            background-color: gray;
+           display: flex;
+           align-items: flex-start;
+           justify-content: space-between;
+            width: 100%;
+        }
+
+      
+          li{
+            margin: 20px;
+            padding: 30px;
+          }
+          li:nth-child(even){
+            background-color: darkred;
+          }
+           li:nth-child(odd){
+            background-color: green;
+          }
+    </style>
+</head>
+<body>
+
+       <div class="main">
+           
+                <li>flex1</li>
+                <li>flex2</li>
+                <li>flex3</li>
+                <li>flex4</li>
+                <li>flex5</li>
+            
+        
+       </div>
+
+
+       <!------------------------------flex box---------------------------------------->
+             <!--- display:flex;
+
+                flex-direction: row/ column;
+                flex:1;
+                alin-item (main-axis): flex-start/ flex-end / center
+
+                justify-content(cross-axis): flex-start / flex-end / center
+
+                ---------------space between----------------
+
+                justify-contant:space between------------------------------------------>
+</body>
+</html>

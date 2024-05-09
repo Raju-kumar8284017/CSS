@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Borders</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+       
+        #BORDER-ALL{
+             background-color: lightsalmon;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            width: 500px;
+            border: 10PX solid GREEN;
+        }
+        #BORDER-dot{
+            background-color: lightsalmon;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            width: 500px;
+            border: 10PX dotted GREEN;
+        }
+        #BORDER-dashed{
+             background-color: lightsalmon;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            width: 500px;
+            border: 10PX dashed GREEN;
+        }
+        #BORDER-double{
+              background-color: lightsalmon;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            width: 500px;
+            border: 10PX double GREEN;
+            
+        }
+        #BORDER-image{
+              background-color: lightsalmon;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            width: 500px;
+            border: 50PX double GREEN;
+            border-image: url("img/nature.jpg");
+
+        }
+        #BORDER-single{
+              background-color: lightsalmon;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            width: 500px;
+            border-left: 20PX solid GREEN;
+            
+        }
+        #BORDER-round{
+            background-color: lightsalmon;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            width: 500px;
+            border: 20PX solid GREEN;
+            border-radius: 40px;
+        }
+        #BORDER-round-left{
+              background-color: lightsalmon;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            width: 500px;
+            border: 20PX solid GREEN;
+            border-radius: 40px 20px 10px 50px;
+        }
+        #BORDER-circle{
+               background-color: lightsalmon;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            height: 300px;
+            border: 20PX solid GREEN;
+            border-radius: 50%;
+            box-shadow: 0 0 40px  black;
+        }
+        #BORDER-frame{
+           background-color: lightsalmon;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            height: 300px;
+            border-left: 20PX solid GREEN;
+            border-bottom: 30px solid darkred;
+            border-right: 40px solid purple;
+            border-top: 20px solid yellow;
+        }
+        #BORDER-circle-d{
+             background-color: lightsalmon;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            height: 300px;
+            border-left: 20PX solid GREEN;
+            border-top: 40px solid red;
+            border-right: 50px solid yellowgreen;
+            border-bottom: 10px solid skyblue;
+            border-radius: 50%;
+            box-shadow: 0 0 40px  black;    
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+      border widths ,styles , colors , sides , rounded , custom
+     -->
+      
+      <!-- ------------------------border widths------------------------------------------->
+
+          <!----------border-width: px, cm, mm
+                   border-style   : solid, dotted, dashed, double
+                   color          : text, hex, rgb, rgba, etc....
+
+            syntax:---
+                     border    : width style color;------------------->
+
+
+            <h2>BORDER ALL SIDES</h2>
+
+            <div id="BORDER-ALL">
+                  <h2>BORDER ALL SIDES</h2>
+            </div>
+
+             <h2>BORDER dot</h2>
+
+            <div id="BORDER-dot">
+                  <h2>BORDER ALL SIDES</h2>
+            </div>
+
+
+             <h2> dashed</h2>
+
+            <div id="BORDER-dashed">
+                  <h2>BORDER ALL SIDES</h2>
+            </div>
+
+             <h2> double</h2>
+
+            <div id="BORDER-double">
+                  <h2>BORDER double</h2>
+            </div>
+
+            <h2>border image</h2>
+
+            <div id="BORDER-image">
+                  <h2>BORDER double</h2>
+            </div>
+
+
+            <h2>border single</h2>
+
+            <div id="BORDER-single">
+                  <h2>BORDER double</h2>
+            </div>
+
+             <h2>border round</h2>
+
+            <div id="BORDER-round">
+                  <h2>BORDER double</h2>
+            </div>
+
+<!-----------------------------two side round border-------------------------------------->
+            <h2>border top left round</h2>
+
+            <div id="BORDER-round-left">
+                  <h2>BORDER double</h2>
+            </div>
+
+
+            <!-----------------------circle-------------------------------->
+
+             <h2>BORDER-circle</h2>
+
+            <div id="BORDER-circle">
+                  <h2>BORDER double</h2>
+            </div>
+
+     <!---------------------------------------------circle-------------------------------->
+
+             <h2>BORDER-circle-d</h2>
+
+            <div id="BORDER-circle-d">
+                  <h2>BORDER-circle-d</h2>
+            </div>
+
+    <!---------------------------------different color------------------------------->
+                <h2>BORDER-frame</h2>
+
+            <div id="BORDER-frame">
+                  <h2>BORDER double</h2>
+            </div>
+
+</body>
+</html>

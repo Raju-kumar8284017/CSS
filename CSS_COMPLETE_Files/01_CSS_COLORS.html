@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS COLORS</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            background: white url("img/image2.jpg") no-repeat fixed center;
+            color: white;
+           
+            background-size: cover;
+        }
+        div{
+            height: 100px;
+        }
+        h1{
+            color: darkred;
+          background-color: lightsalmon;  /*    example of textual-color*/
+        }
+        .rgb{
+            background-color: rgb(0,255, 0);
+        }
+        .hex{
+            background-color: #ff00ff;
+        }
+        .rgba{
+            background-color: rgb(0,255, 0 , 0.5);
+        }
+        .hsla{
+            background-color: hsla(255, 100%, 50%, 0.5);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!---------------------------------------tetual color----------------------------------------------->
+     <h1>textual color</h1>
+
+
+    <!---------------------------------------------- RGB 
+            rgb   :(red, green, blue);
+            range : 0 - 255
+            white : rgb(255,255,255)
+            black : rgb(0,0,0)
+    -------------------------------------------------->
+
+    <h2>RGB</h2>
+    <div id="rgb">
+        <h2 class="rgb">for rbg color</h2>
+    </div>
+
+    <!----------------------------- HEX ---------------------------------------------------------------->
+
+
+    <!-- hexa decimal
+            hex   : #rrggbb
+            range : 00 - ff
+            white : #ffffff;
+            black : #000000;
+    -->
+
+    <h2>HEX</h2>
+    <div id="hex">
+           <h1 class="hex">for hex color</h1>
+    </div>
+
+    <!-- ----------------------------------------HSL----------------------------- -->
+
+     <!-- hsl 
+            hel         : (hue, saturation, lightness)
+            range       : 0 - 360 degree
+            darkness %  : 0 - 100%;
+            lightness   : 0-100%;
+            hsl       (360,20%,50%)
+    -->
+
+    <h2>HSL</h2>
+    <div id="hsl">
+            <h1>for hsl color</h1>
+    </div>
+
+    <!---------------------------------- RGBA ----------------------------------------------->
+
+    <!--rgba
+            rgba :(red, green, blue, alpha)
+            alpha=> 0 then (full transparent)
+            alpha=> 1 then (full color)
+            syntax : (0,255,0,0.5)-->
+    <h2>RGBA</h2>
+    <div id="rgba">
+            <h2 class="rgba">for rbga color</h2>
+    </div>
+
+    <!------------------------------------ HSLA -------------------------------------------->
+     <!-- hsl 
+            hel         : (hue, saturation, lightness)
+            range       : 0 - 360 degree
+            darkness %  : 0 - 100%;
+            lightness   : 0-100%;
+
+             hsl       (360,20%,50%, 0.5);
+    -->
+
+    <h2>HSLA</h2>
+    <div id="hsla">
+        <h1 class="hsla">for hsla color</h1>
+    </div>
+
+</body>
+</html>

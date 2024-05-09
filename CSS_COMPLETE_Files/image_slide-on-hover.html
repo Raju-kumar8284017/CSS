@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>image slide</title>
+</head>
+<style type="text/css">
+	.main{
+		width: 400px;
+		height: 400px;
+		box-shadow: 0 0 10px red;
+		border-radius: 20px;
+		margin: 50px auto;
+		position: relative;
+		overflow: hidden;
+		background-color: black;
+		
+	}
+	.main img{
+		width: inherit;
+		height: inherit;
+		border-radius: 20px 20px 0 0;
+		transition: all 0.9s;
+		transform: translatey(0%);
+		overflow: hidden;
+
+	}
+	.text{
+		position: absolute;
+		background-color: rgba(0, 0, 0, 1.0);
+		color: white;
+		text-align: center;
+		border-radius: 0 0 20px 20px;
+		bottom: -40%;
+		transform: translatey(0%);
+		transition: all 0.9s;
+		overflow: hidden;
+	}
+	.main:hover .text{
+		transform: translateY(-100%);
+	}
+	.main:hover img{
+		transform: translateY(-25%);
+	}
+	
+</style>
+<body>
+
+       <div class="main">
+       	     <img src="img/image1.jpg">
+       	     <div class="text">
+       	     	   <h2>slide</h2>
+       	     	   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       	     	   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       	     	   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       	     	   consequat.</p>
+       	     </div>
+       </div>
+</body>
+</html>

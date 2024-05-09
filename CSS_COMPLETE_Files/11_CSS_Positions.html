@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>css position</title>
+    <style type="text/css">
+        .box{
+            width: 100px;
+            height: 100px;
+            box-shadow: 0 0 10px black;
+        }
+        .box1{
+            background-color: darkred;
+        }
+         .box2{
+            background-color: gray;
+        }
+         .box3{
+            background-color: blue;
+        }
+         .box4{
+            background-color: green;
+        }
+         .box5{
+            background-color: yellow;
+        }
+/*---------------------------------for relative-------------------------------*/
+        .box6{
+            background-color: darkred;
+            position: relative;
+            left: 50px;
+        }
+         .box7{
+            background-color: gray;
+             position: relative;
+            left: 500px;
+        }
+         .box8{
+             background-color:blue;
+             position: relative;
+             top: -500px;
+             left: 300px;
+        }
+         .box9{
+            background-color: green;
+            position: relative;
+             bottom: 300px;
+             left: 300px;
+        }
+         .box10{
+            background-color: yellow;
+            position: relative;
+             bottom: 200px;
+             left: 200px;
+        }
+/*------------- => Absolute:- position relative to its parents-------------------------------*/                               
+        .parent{
+            width: 800px;
+            height: 500px;
+            box-shadow: 0 0 10px green;
+            position: relative;
+        }
+        .box11{
+            background-color: darkred;
+            position: absolute;
+             bottom: 200px;
+             left: 200px;
+        }
+         .box12{
+            background-color: green;
+            position: absolute;
+             bottom: 100px;
+             left: 300px;
+        }
+      /*--------=> fixed:- this is foxed position of an elements given------  */
+      .fixed{
+        width: 800px;
+            height: 500px;
+            box-shadow: 0 0 10px green;
+      }
+          .box13{
+            background-color: green;
+            position: fixed;
+             bottom: 100px;
+             left: 500px;
+        }
+
+       .box15{
+            background-color: red;
+            position: sticky;
+            top: 0;
+            left: 100%;
+            
+            box-shadow: 0 0 20px black;
+       }
+
+/*------ --------------------- => Z-index -------------------------------------------------*/
+       .box17{
+           background-color: red;
+           width: 100px;
+           height: 100px;
+           border-radius: 50%;
+           border: 2px solid black;
+           position: relative;
+           margin-left: 50px;
+           z-index: 1;
+           margin-top: 20px;
+       }
+          .box18{
+           background-color: rgba(255, 155, 0, 0.5);
+           width: 100px;
+           height: 100px;
+           border-radius: 50%;
+           border: 2px solid black;
+           position: relative;
+           margin-left: 50px;
+           margin-top: -50px;
+           z-index: 2;
+       }
+          .box19{
+           background-color: yellow;
+           width: 100px;
+           height: 100px;
+           border-radius: 50%;
+           border: 2px solid black;
+           position: relative;
+           margin-left: 90px;
+           margin-top: -90px;
+           z-index: 4;
+       }
+          .box20{
+           background-color:purple;
+           width: 100px;
+           height: 100px;
+           border-radius: 50%;
+           border: 2px solid black;
+           position: relative;
+         margin-left: 160px;
+         margin-top: -100px;
+           z-index: 5;
+       }
+          .box21{
+           background-color: red;
+           width: 100px;
+           height: 100px;
+           border-radius: 50%;
+           border: 2px solid black;
+           position: relative;
+           margin-left: 200px;
+           margin-top: -120px;
+           z-index: 3;
+           box-shadow: 10px black;
+       }
+    </style>
+</head>
+<body>
+      
+      <!-----------------position :-------------------------------------------
+                                     =>static:- default position of element
+    left,
+        right,                       => Relative:- position relative to its own
+
+                top,                 => Absolute:- position relative to its parents
+                      bottom,
+                                     => fixed:- this is foxed position of an elements given
+
+                                     => Sticky: - its for a elements that is given
+                                     ------------------------------------------------------>
+
+<!----------------- =>static:- default position of element--------------------------------------->
+
+                                    
+            <div class="box box1"></div>      <!----can't change theit's position--------------->
+            <div class="box box2"></div>            
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+
+<!------------- => Relative:- position relative to its own--------------------------------------->
+
+              <div class="box box6"></div>      <!----it's change  position--------------->
+              <div class="box box7"></div>            
+              <div class="box box8"></div>
+              <div class="box box9"></div>
+              <div class="box box10"></div>
+
+
+<!------------- => Absolute:- position relative to its parents---------------------------------->
+
+              <div class="parent">
+                     <div class="box box11"></div>
+                     <div class="box box12"></div>
+              </div>
+
+<!----------- => fixed:- this is foxed position of an elements given----------------------------->
+                
+                 <div class="fixed">
+                     <div class="box box13"></div>
+                     <div class="box box14"></div>
+              </div> <br><rb><rb></rb></rb>
+
+ <!----------- => Sticky: - its for a elements that is given----------------------------->
+
+                <div class="sticky">
+                     <div class="box box15"></div>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                     <div class="box box16"></div>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+              </div>
+
+  <!------ --------------------- => Z-index ------------------------------------------------->
+
+             <div class="z-index"> <h1>z-index</h1>
+                    <div class="box box17"></div>
+                    <div class="box box18"></div>
+                    <div class="box box19"></div>
+                    <div class="box box20"></div>
+                    <div class="box box21"></div>
+             </div>
+
+</body>
+</html>
